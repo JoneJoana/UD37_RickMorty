@@ -1,5 +1,11 @@
 # T37RickMorty
 
+## DEPLOY AWS - Amplify
+```
+https://main.dtr7mzp4yvvou.amplifyapp.com/characters
+```
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 
 ## Development server
