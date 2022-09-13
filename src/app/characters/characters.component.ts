@@ -16,8 +16,15 @@ export class CharactersComponent implements OnInit {
     this.load8RndomCharacters();
   }
 
+  getRndom(){
+    return Math.floor(Math.random() * 826+ 1);
+  }
+
   load8RndomCharacters(){
-    this.http.get("https://rickandmortyapi.com/api/character/1,10,28,250,460,556,731,429").subscribe(
+    this.http.get("https://rickandmortyapi.com/api/character/"+
+    this.getRndom()+","+this.getRndom()+","+this.getRndom()+","+this.getRndom()+","+this.getRndom()
+    +","+this.getRndom()+","+this.getRndom()+","+this.getRndom())
+    .subscribe(
       response=>{
         this.characters = response;
       },
