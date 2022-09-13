@@ -2,7 +2,7 @@
 
 ## DEPLOY AWS - Amplify
 ```
-https://main.dtr7mzp4yvvou.amplifyapp.com/characters
+https://main.dtr7mzp4yvvou.amplifyapp.com/home
 ```
 
 
