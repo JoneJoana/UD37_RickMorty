@@ -1,0 +1,18 @@
+img{
+  margin-top: 80px;
+  margin-left: 50px;
+  width: 60%;
+  border-radius: 5em;
+  border: 2px solid black;
+  text-align: right;
+}
+
+.card{
+  margin-top: 120px;
+  margin-right: 80px;
+  float: left;
+}
+
+.card-title{
+  font-weight: bold;
+}
