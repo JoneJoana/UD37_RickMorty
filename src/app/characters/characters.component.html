@@ -3,9 +3,9 @@
     <div class="card">
       <img src="{{character.image}}" height="150px" class="card-img-top" alt="imagen del character">
       <div class="card-body">
-        <h5 class="card-title">{{character.name | uppercase}}, {{character.id}}</h5>
-        <p class="card-text"><strong>Status</strong>: {{character.status}} <br> <strong>Species</strong>: {{character.species}}</p>
-        <button class="btn btn-danger" [routerLink]="['/characters',character.characterId]">See more</button>
+        <h5 class="card-title">{{character.name | uppercase}}</h5>
+        <p class="card-text"><strong>ID</strong>: {{character.id}}</p>
+        <button class="btn btn-danger" [routerLink]="['/characters',character.id]">See more</button>
       </div>
     </div>
   </div>

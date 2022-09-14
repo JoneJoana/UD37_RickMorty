@@ -16,7 +16,7 @@ export class RickMortyService {
       getRndom().join());
   }
 
-  getCharacterByID(){
+  getCharacterByID(id: any){
     return this.http.get(BASE+"character/"+id);
   }
 
