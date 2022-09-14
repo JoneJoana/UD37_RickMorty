@@ -1,37 +1,33 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { RickMortyService } from '../rick-morty.service';
 
 @Component({
   selector: 'app-characters',
   templateUrl: './characters.component.html',
-  styleUrls: ['./characters.component.css']
+  styleUrls: ['./characters.component.css'],
 })
 export class CharactersComponent implements OnInit {
-
   characters: any;
 
-  constructor(private http: HttpClient) { }
+  constructor(private rickMortyService: RickMortyService) {}
 
   ngOnInit() {
-    this.load8RndomCharacters();
+    this.loadRndomCharacters();
   }
 
-  getRndom(){
-    return Math.floor(Math.random() * 826+ 1);
+  getRndom() {
+    return Math.floor(Math.random() * 826 + 1);
   }
 
-  load8RndomCharacters(){
-    this.http.get("https://rickandmortyapi.com/api/character/"+
-    this.getRndom()+","+this.getRndom()+","+this.getRndom()+","+this.getRndom()+","+this.getRndom()
-    +","+this.getRndom()+","+this.getRndom()+","+this.getRndom())
-    .subscribe(
-      response=>{
+  loadRndomCharacters() {
+    this.rickMortyService.get8RndomCharacters().subscribe(
+      (response) => {
         this.characters = response;
       },
-      error => {
-        console.log("error al cargar datos");
+      (error) => {
+        console.log('Error al cargar datos');
       }
     );
   }
-
 }
