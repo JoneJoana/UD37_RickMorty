@@ -14,7 +14,7 @@
       "id": 2,
       "name": "Morty Smith",
       "status": "Alive",
-      "species": "Human",
+      "species": "Humanoid",
       "gender": "Male",
       "origin": "unknown",
       "location": "Citadel of Ricks",
@@ -32,16 +32,6 @@
     },
     {
       "id": 4,
-      "name": "Beth Smith",
-      "status": "Alive",
-      "species": "Human",
-      "gender": "Female",
-      "origin": "Earth (Replacement Dimension)",
-      "location": "Earth (Replacement Dimension)",
-      "image": "https://rickandmortyapi.com/api/character/avatar/4.jpeg"
-    },
-    {
-      "id": 5,
       "name": "Jerry Smith",
       "status": "Alive",
       "species": "Human",
@@ -51,7 +41,7 @@
       "image": "https://rickandmortyapi.com/api/character/avatar/5.jpeg"
     },
     {
-      "id": 6,
+      "id": 5,
       "name": "Abadango Cluster Princess",
       "status": "Alive",
       "species": "Alien",
@@ -61,7 +51,7 @@
       "image": "https://rickandmortyapi.com/api/character/avatar/6.jpeg"
     },
     {
-      "id": 78,
+      "id": 6,
       "name": "Cowboy Rick",
       "status": "Alive",
       "species": "Human",
@@ -71,7 +61,7 @@
       "image": "https://rickandmortyapi.com/api/character/avatar/78.jpeg"
     },
     {
-      "id": 50,
+      "id": 7,
       "name": "Blim Blam",
       "status": "Alive",
       "species": "Alien",
@@ -81,7 +71,7 @@
       "image": "https://rickandmortyapi.com/api/character/avatar/50.jpeg"
     },
     {
-      "id": 265,
+      "id": 8,
       "name": "Pickle Rick",
       "status": "Alive",
       "species": "unknown",
@@ -91,7 +81,7 @@
       "image": "https://rickandmortyapi.com/api/character/avatar/265.jpeg"
     },
     {
-      "id": 367,
+      "id": 9,
       "name": "Trunk Man",
       "status": "Alive",
       "species": "Humanoid",
@@ -101,7 +91,7 @@
       "image": "https://rickandmortyapi.com/api/character/avatar/367.jpeg"
     },
     {
-      "id": 490,
+      "id": 10,
       "name": "Chang",
       "status": "Alive",
       "species": "Human",
@@ -111,7 +101,7 @@
       "image": "https://rickandmortyapi.com/api/character/avatar/490.jpeg"
     },
     {
-      "id": 80,
+      "id": 11,
       "name": "Creepy Little Girl",
       "status": "Alive",
       "species": "Human",
@@ -121,7 +111,7 @@
       "image": "https://rickandmortyapi.com/api/character/avatar/80.jpeg"
     },
     {
-      "id": 704,
+      "id": 12,
       "name": "Squid Costume Beth",
       "status": "Dead",
       "species": "Robot",
@@ -131,7 +121,7 @@
       "image": "https://rickandmortyapi.com/api/character/avatar/704.jpeg"
     },
     {
-      "id": 745,
+      "id": 13,
       "name": "Cenobite",
       "status": "unknown",
       "species": "Mythological Creature",
@@ -141,7 +131,7 @@
       "image": "https://rickandmortyapi.com/api/character/avatar/745.jpeg"
     },
     {
-      "id": 607,
+      "id": 14,
       "name": "Hairspray Fan",
       "status": "Alive",
       "species": "Alien",
@@ -151,14 +141,14 @@
       "image": "https://rickandmortyapi.com/api/character/avatar/607.jpeg"
     },
     {
-      "id": 141,
+      "id": 15,
       "name": "Ghost in a Jar",
       "status": "Dead",
       "species": "Alien",
       "gender": "Genderless",
       "origin": "unknown",
       "location": "Earth (Replacement Dimension)",
-      "image": "https://rickandmortyapi.com/api/character/avatar/607.jpeg"
+      "image": "https://rickandmortyapi.com/api/character/avatar/141.jpeg"
     }
   ]
 }
