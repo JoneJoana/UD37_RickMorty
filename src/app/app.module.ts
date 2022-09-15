@@ -9,6 +9,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 
 import {HttpClientModule} from '@angular/common/http';
 import { InfoCharacterComponent } from './info-character/info-character.component';
+import { AddCharacterComponent } from './add-character/add-character.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,12 +19,14 @@ import { InfoCharacterComponent } from './info-character/info-character.componen
     HomeComponent,
     CharactersComponent,
     AboutUsComponent,
-    InfoCharacterComponent
+    InfoCharacterComponent,
+    AddCharacterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

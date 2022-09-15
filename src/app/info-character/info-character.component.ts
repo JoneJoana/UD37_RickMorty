@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Character } from '../models/characters.model';
 import { RickMortyService } from '../rick-morty.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { RickMortyService } from '../rick-morty.service';
 })
 export class InfoCharacterComponent implements OnInit {
 
-  character: any;
+  character: any = '';
 
   constructor(private _router: Router,private _route: ActivatedRoute,private rickMortyService: RickMortyService) { }
 
