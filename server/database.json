@@ -14,7 +14,7 @@
       "id": 2,
       "name": "Morty Smith",
       "status": "Alive",
-      "species": "Humanoid",
+      "species": "Human",
       "gender": "Male",
       "origin": "unknown",
       "location": "Citadel of Ricks",

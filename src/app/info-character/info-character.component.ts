@@ -39,6 +39,8 @@ export class InfoCharacterComponent implements OnInit {
         response => {
           console.log(response);
           this.message = response.message ? response.message: 'updated succesfully'
+          alert('Personaje actualizado')
+          this._router.navigate(['/characters']);
         },
         (error) => {
           console.log(error+' updateCharacter');
