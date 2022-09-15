@@ -8,17 +8,21 @@
           <div class="card-body">
             <h5 class="card-title">{{character.name | uppercase }}</h5>
             <p class="card-text">
-              <strong>Status</strong>: {{character.status}}
+              <strong>Status</strong>: <input class="form-control" type="text" [(ngModel)]="character.status">
               <br>
-              <strong>Species</strong>: {{character.species}}
+              <strong>Species</strong>: <input class="form-control" type="text" [(ngModel)]="character.species">
               <br>
-              <strong>Gender</strong>: {{character.gender}}
+              <strong>Gender</strong>: <input class="form-control" type="text" [(ngModel)]="character.gender">
               <br>
-              <strong>Origin</strong>: {{character.origin.name | json}}
+              <strong>Origin</strong>: <input class="form-control" type="text" [(ngModel)]="character.origin">
               <br>
-              <strong>Location</strong>: {{character.location.name | json}}
+              <strong>Location</strong>: <input class="form-control" type="text" [(ngModel)]="character.location">
             </p>
-            <button class="btn btn-danger" (click)="onBack()">Back</button>
+            <button class="btn btn-danger" (click)="onBack()">Back</button> &nbsp;
+            <button class="btn btn-danger" (click)="updateCharacter()">Edit</button>
+            <br>
+            <br>
+            <button class="btn btn-danger" (click)="deleteCharacter()">Delete</button>
           </div>
         </div>
       </div>

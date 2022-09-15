@@ -10,13 +10,14 @@ import { RickMortyService } from '../rick-morty.service';
 })
 export class InfoCharacterComponent implements OnInit {
 
-  character: any = '';
-
+  message = '';
+  character: Character = {};
+  id: any;
   constructor(private _router: Router,private _route: ActivatedRoute,private rickMortyService: RickMortyService) { }
 
   ngOnInit(): void {
-    let id = this._route.snapshot.paramMap.get('id');
-    this.rickMortyService.getCharacterByID(id).subscribe(
+    this.id = this._route.snapshot.paramMap.get('id');
+    this.rickMortyService.getCharacterByID(this.id).subscribe(
       (response) => {
         this.character = response;
       },
@@ -29,5 +30,35 @@ export class InfoCharacterComponent implements OnInit {
   onBack(): void{
     this._router.navigate(['/characters']);
   }
+
+  updateCharacter():void{
+    this.message = '';
+
+    this.rickMortyService.update(this.id,this.character)
+      .subscribe(
+        response => {
+          console.log(response);
+          this.message = response.message ? response.message: 'updated succesfully'
+        },
+        (error) => {
+          console.log(error+' updateCharacter');
+        }
+      );
+  }
+
+  deleteCharacter(){
+    this.rickMortyService.delete(this.id)
+      .subscribe(
+        response => {
+          console.log(response);
+          this._router.navigate(['/characters']);
+        },
+        error =>{
+          console.log(error+' deleteCharacter');
+        }
+      )
+  }
+
+
 
 }
