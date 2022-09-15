@@ -1,13 +1,13 @@
-# T37RickMorty
-
-## DEPLOY AWS - Amplify
-```
-https://main.dtr7mzp4yvvou.amplifyapp.com/home
-```
+# T41RickMorty
 
 ## DEPLOY DE LA RAMA
 ```
-https://t38-service-ang.dtr7mzp4yvvou.amplifyapp.com
+https://t41-crud-r.dtr7mzp4yvvou.amplifyapp.com/characters
+```
+
+## DEPLOY JSON-SERVER
+```
+https://db-rick-morty.herokuapp.com/characters
 ```
 
 
