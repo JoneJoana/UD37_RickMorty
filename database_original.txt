@@ -1,0 +1,154 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "name": "Rick Sanchez",
+      "status": "Alive",
+      "species": "Human",
+      "gender": "Male",
+      "origin": "Earth (C-137)",
+      "location": "Citadel of Ricks",
+      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Morty Smith",
+      "status": "Alive",
+      "species": "Humanoid",
+      "gender": "Male",
+      "origin": "unknown",
+      "location": "Citadel of Ricks",
+      "image": "https://rickandmortyapi.com/api/character/avatar/2.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Summer Smith",
+      "status": "Alive",
+      "species": "Human",
+      "gender": "Female",
+      "origin": "Earth (Replacement Dimension)",
+      "location": "Earth (Replacement Dimension)",
+      "image": "https://rickandmortyapi.com/api/character/avatar/3.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Jerry Smith",
+      "status": "Alive",
+      "species": "Human",
+      "gender": "Male",
+      "origin": "Earth (Replacement Dimension)",
+      "location": "Earth (Replacement Dimension)",
+      "image": "https://rickandmortyapi.com/api/character/avatar/5.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Abadango Cluster Princess",
+      "status": "Alive",
+      "species": "Alien",
+      "gender": "Female",
+      "origin": "Abadango",
+      "location": "Abadango",
+      "image": "https://rickandmortyapi.com/api/character/avatar/6.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Cowboy Rick",
+      "status": "Alive",
+      "species": "Human",
+      "gender": "Male",
+      "origin": "unknown",
+      "location": "Citadel of Ricks",
+      "image": "https://rickandmortyapi.com/api/character/avatar/78.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "Blim Blam",
+      "status": "Alive",
+      "species": "Alien",
+      "gender": "Male",
+      "origin": "unknown",
+      "location": "Earth (Replacement Dimension)",
+      "image": "https://rickandmortyapi.com/api/character/avatar/50.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "Pickle Rick",
+      "status": "Alive",
+      "species": "unknown",
+      "gender": "Male",
+      "origin": "Earth (C-137)",
+      "location": "Earth (Replacement Dimension)",
+      "image": "https://rickandmortyapi.com/api/character/avatar/265.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "Trunk Man",
+      "status": "Alive",
+      "species": "Humanoid",
+      "gender": "Male",
+      "origin": "Trunk World",
+      "location": "Interdimensional Cable",
+      "image": "https://rickandmortyapi.com/api/character/avatar/367.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "Chang",
+      "status": "Alive",
+      "species": "Human",
+      "gender": "Male",
+      "origin": "unknown",
+      "location": "The Menagerie",
+      "image": "https://rickandmortyapi.com/api/character/avatar/490.jpeg"
+    },
+    {
+      "id": 11,
+      "name": "Creepy Little Girl",
+      "status": "Alive",
+      "species": "Human",
+      "gender": "Female",
+      "origin": "unknown",
+      "location": "Mr. Goldenfold's dream",
+      "image": "https://rickandmortyapi.com/api/character/avatar/80.jpeg"
+    },
+    {
+      "id": 12,
+      "name": "Squid Costume Beth",
+      "status": "Dead",
+      "species": "Robot",
+      "gender": "Female",
+      "origin": "Earth (Replacement Dimension)",
+      "location": "Earth (Replacement Dimension)",
+      "image": "https://rickandmortyapi.com/api/character/avatar/704.jpeg"
+    },
+    {
+      "id": 13,
+      "name": "Cenobite",
+      "status": "unknown",
+      "species": "Mythological Creature",
+      "gender": "Female",
+      "origin": "Hell",
+      "location": "Hell",
+      "image": "https://rickandmortyapi.com/api/character/avatar/745.jpeg"
+    },
+    {
+      "id": 14,
+      "name": "Hairspray Fan",
+      "status": "Alive",
+      "species": "Alien",
+      "gender": "Female",
+      "origin": "Story Train",
+      "location": "Story Train",
+      "image": "https://rickandmortyapi.com/api/character/avatar/607.jpeg"
+    },
+    {
+      "id": 15,
+      "name": "Ghost in a Jar",
+      "status": "Dead",
+      "species": "Alien",
+      "gender": "Genderless",
+      "origin": "unknown",
+      "location": "Earth (Replacement Dimension)",
+      "image": "https://rickandmortyapi.com/api/character/avatar/141.jpeg"
+    }
+  ]
+}
