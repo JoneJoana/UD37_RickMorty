@@ -9,8 +9,6 @@ import { RickMortyService } from '../rick-morty.service';
 })
 export class CharactersComponent implements OnInit {
   characters?: Character[];
-  currentCharacter: any = { };
-  currentIndex = -1;
   name = '';
 
   constructor(private rickMortyService: RickMortyService) {}
@@ -32,33 +30,8 @@ export class CharactersComponent implements OnInit {
       );
   }
 
-  refreshList(): void{
-    this.loadCharacters();
-    this.currentCharacter = {};
-    this.currentIndex = -1;
-  }
-
-  setActiveCharacter(character: Character,index: number):void{
-    this.currentCharacter = character;
-    this.currentIndex = index;
-  }
-
-  /* removeAllCharacters(): void{
-    this.rickMortyService.deleteAll()
-      .subscribe(
-        response => {
-          console.log(response);
-          this.refreshList();
-        },
-        error => {
-          console.log(error + 'error removeAll');
-        });
-  } */
 
   searchName(): void {
-    this.currentCharacter = {};
-    this.currentIndex = -1;
-
     this.rickMortyService.findByName(this.name)
       .subscribe(
         data => {
