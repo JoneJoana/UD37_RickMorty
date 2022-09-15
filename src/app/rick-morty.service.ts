@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Character } from './models/characters.model';
 
-const BASE = "https://localhost:3000/characters/";
+const BASE = "http://localhost:3000/characters/";
 
 
 @Injectable({

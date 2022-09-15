@@ -7,7 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { CharactersComponent } from './characters/characters.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { InfoCharacterComponent } from './info-character/info-character.component';
 import { AddCharacterComponent } from './add-character/add-character.component';
 import { FormsModule } from '@angular/forms';
