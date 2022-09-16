@@ -7,8 +7,9 @@
           <strong>Token</strong>:
           {{tokenUser}}
           <br>
-          <strong>Rol</strong>:
-          {{roles}}
+          <strong>Rol</strong>: <!-- a implementar segun roles -->
+          <span *ngIf="currentUserName == 'GeeksHubs_2022'">Admin</span>
+          <span *ngIf="currentUserName == 'CT2022'">User</span>
         </p>
       </div>
     </div>

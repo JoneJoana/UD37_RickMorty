@@ -38,6 +38,11 @@ export class TokenStorageService {
     return {};
   }
 
+
+  /*no localizo que pasa, pero en este punto falla i entra a err, por tanto no recupera el rol. en concreto:
+  GEThttps://jmm-spring-api-h2-angular.herokuapp.com/users/GeeksHubs_2022 [HTTP/1.1 403  63ms] - no autorizado
+ por tanto mnsaje err --> Couldn't find role information
+  */
   public setRoles() {
     const user = this.getUser().replace(/['"]+/g, '');
 

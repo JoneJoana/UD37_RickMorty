@@ -21,7 +21,7 @@
             <a class="nav-link" [routerLink]="['/characters']">Characters</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" *ngIf="roles == 'admin'" [routerLink]="['/add']">Add Character</a>
+            <a class="nav-link" *ngIf="username == 'GeeksHubs_2022'" [routerLink]="['/add']">Add Character</a> <!-- al no poder recoger el rol, hardcodeo-->
           </li>
           <li class="nav-item">
             <a class="nav-link" [routerLink]="['/about']">About</a>
