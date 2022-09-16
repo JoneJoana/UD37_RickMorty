@@ -11,7 +11,6 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { InfoCharacterComponent } from './info-character/info-character.component';
 import { AddCharacterComponent } from './add-character/add-character.component';
 import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
@@ -26,16 +25,15 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
     InfoCharacterComponent,
     AddCharacterComponent,
     LoginComponent,
-    RegisterComponent,
     ProfileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
-  providers: [],
+  providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

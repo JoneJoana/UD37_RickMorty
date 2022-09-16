@@ -21,12 +21,27 @@
             <a class="nav-link" [routerLink]="['/characters']">Characters</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/add']">Add Character</a>
+            <a class="nav-link" *ngIf="roles == 'admin'" [routerLink]="['/add']">Add Character</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" [routerLink]="['/about']">About</a>
           </li>
         </ul>
+        <div class="d-flex">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" *ngIf="!isLoggedIn">
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/login']">Login</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" *ngIf="isLoggedIn">
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/profile']">{{usernameView}}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="logout()">LogOut</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
