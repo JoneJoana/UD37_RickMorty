@@ -20,16 +20,16 @@
             </div>
           </div>
           <div class="form-group">
-            <button class="btn btn-danger" >Login</button>
+            <button class="btn btn-danger">Login</button>
           </div>
           <div class="form-group">
             <div class="alert alert-danger" role="alert" *ngIf="f.submitted && isLoginFailed">
-              Login incorrecto: {{ errorMessage }}
+              Login incorrecto
             </div>
           </div>
         </form>
         <div class="alert alert-success" *ngIf="isLoggedIn">
-          Has accedido como {{ roles }}
+          Has accedido correctamente
         </div>
       </div>
     </div>

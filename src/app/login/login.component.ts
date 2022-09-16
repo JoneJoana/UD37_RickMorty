@@ -13,18 +13,21 @@ export class LoginComponent implements OnInit {
     username: null,
     password: null
   }
+  username?: string;
   isLoggedIn = false;
   isLoginFailed = false;
-  errorMessage = '';
-  roles: string[]= [];
+
+  roles: string | undefined;
 
   constructor(private authService: AuthService, private tokenStorage: TokenStorageService) { }
 
   ngOnInit(): void {
-    if(this.tokenStorage.getToken()){
-      this.isLoggedIn = !!this.tokenStorage.getToken();;
-      this.roles = this.tokenStorage.getUser().roles;
-      console.log(this.roles)
+    this.isLoggedIn = !!this.tokenStorage.getToken();
+    if (this.isLoggedIn) {
+      const user = this.tokenStorage.getUser();
+      const token = this.tokenStorage.getToken();
+      this.username = JSON.stringify(user).replace(/['"]+/g, ''); // faig un regex per treure-li les cometes
+      this.roles = this.tokenStorage.getRoles()?.toString().replace(/['"]+/g, '');
     }
   }
 
@@ -38,8 +41,6 @@ export class LoginComponent implements OnInit {
 
         this.isLoginFailed = false;
         this.isLoggedIn = true;
-        //this.roles = this.tokenStorage.getUser().roles; //getUser solo devuelve el nombre no el objeto user
-        //console.log(this.roles) //undefined
         this.reloadPage();
       },
       error => {
