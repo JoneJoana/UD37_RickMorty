@@ -1,8 +1,8 @@
-# T41RickMorty
+# T42_RickMorty
 
 ## DEPLOY DE LA RAMA
 ```
-https://t41-crud-r.dtr7mzp4yvvou.amplifyapp.com/characters
+https://t42.d1xjaavhw8f7k8.amplifyapp.com/
 ```
 
 ## DEPLOY JSON-SERVER
