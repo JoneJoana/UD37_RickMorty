@@ -1,16 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CharactersComponent } from './characters/characters.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-
-import { HttpClientModule } from '@angular/common/http';
 import { InfoCharacterComponent } from './info-character/info-character.component';
 import { AddCharacterComponent } from './add-character/add-character.component';
-import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { ProfileComponent } from './profile/profile.component';
+
+// import { authInterceptorProviders } from './profile/profile.component';
 
 
 @NgModule({
@@ -20,7 +24,10 @@ import { FormsModule } from '@angular/forms';
     CharactersComponent,
     AboutUsComponent,
     InfoCharacterComponent,
-    AddCharacterComponent
+    AddCharacterComponent,
+    LoginComponent,
+    RegisterComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
